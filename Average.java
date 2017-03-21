@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Average { 
@@ -9,10 +10,20 @@ public class Average {
         System.out.println("\n중간에 0을 입력하면 이전 입력자료로 계산하고 종료합니다.");  
         System.out.print("실수 " + size + "개를 입력하세요. >> ");    
         double abb[] = new double[size];
-        
-        for(size =1; size<100; size++){
-        	abb        	}
-        
+        double sum= 0;
+        double avg =0;
+                
+        for(int s=0; s < 1000; s++){
+        	abb[s]= input.nextInt();
+        	if(abb[s]==0){
+        		break;
+        	}
+        	sum= abb[s]+sum;
+        	avg= sum/s;
+        	sum++;
+        	
+        }
+        	
         
         
         //프로그래밍 하세요.
